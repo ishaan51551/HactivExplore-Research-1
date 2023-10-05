@@ -19,16 +19,3 @@ Serverless Computing is a cloud computing model where cloud providers like Amazo
 
 Let's take AWS Lambda as an example. Lambda allows you to run code in response to various events, such as an HTTP request or a file upload. Here's a simple javascript example of a Lambda function:
 
-```javascript
-import json
-
-exports.handler = async (event, context) => {
-    // Handle an event (e.g., an HTTP request or a file upload)
-    // Perform some computation or data processing
-    const result = { message: "Hello, Serverless World!" };
-
-    return {
-        statusCode: 200,
-        body: JSON.stringify(result)
-    };
-};
